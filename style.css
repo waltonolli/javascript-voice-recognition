@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
     --font-family: 'Roboto', sans-serif;
@@ -20,12 +20,18 @@ body {
 }
 
 h1 {
+    font-weight: 100;
     font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
 }
 
 h3 {
     font-size: 2rem;
     margin-top: 20px;
+    font-weight: 100;
 }
 
 .mensagem {
@@ -39,4 +45,12 @@ h3 {
     font-size: 4rem;
     padding: 10px;
     margin: 20px;
+}
+
+.btn-jogar {
+    padding: 8px 15px;
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 20px;
 }
