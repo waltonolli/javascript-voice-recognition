@@ -2,6 +2,16 @@ function verificaSeChuteTemValorValido(chute) {
     const numero = + chute
 
     if (chuteInvalido(numero)) {
+        if (chute.toUpperCase() === 'GAME OVER') {
+            document.body.innerHTML =
+            `
+            <h2>Game Over!</h2>
+            <h3>Pressione o botão para jogar novamente</h3>
+
+            <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+            `
+            document.body.style.backgroundColor = '#E76161'
+        }
         elementoChute.innerHTML += '<div>Valor invalido, fale somente números</div>'
         return
     }
